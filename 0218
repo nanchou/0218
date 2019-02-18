@@ -1,0 +1,22 @@
+>>> a = "some_string"
+>>> id(a)
+140420665652016
+>>> id("some" + "_" + "string") 
+140420665652016
+>>> a = "wtf"
+>>> b = "wtf"
+>>> a is b
+True
+
+>>> a = "wtf!"
+>>> b = "wtf!"
+>>> a is b
+False
+
+>>> a, b = "wtf!", "wtf!"
+>>> a is b
+True
+>>> 'a' * 20 is 'aaaaaaaaaaaaaaaaaaaa'
+True
+>>> 'a' * 21 is 'aaaaaaaaaaaaaaaaaaaaa'
+False
